@@ -1,0 +1,3 @@
+@mixin apply-font($font-face: map-get($fonts, 'nta'), $size: 19px, $line-height: 1.44) {
+  font: #{$size}/#{$line-height} unquote($font-face);
+}
