@@ -1,0 +1,21 @@
+{
+  "name": "govuk-styles",
+  "version": "0.0.0",
+  "authors": [
+    "Tyom Semonov <inspiro@gmail.com>"
+  ],
+  "main": [
+    "assets/css/govuk.css"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+  }
+}
