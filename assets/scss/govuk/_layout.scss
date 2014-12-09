@@ -1,0 +1,7 @@
+$susy: (
+  container: 960px
+);
+
+.container {
+  @include container;
+}
