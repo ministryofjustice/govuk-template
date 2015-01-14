@@ -1,3 +1,74 @@
-@mixin apply-font($font-face: map-get($fonts, 'nta'), $size: 19px, $line-height: 1.44) {
-  font: #{$size}/#{$line-height} unquote($font-face);
+body {
+  @include font(nta, $em-base);
+}
+
+// Links
+
+a {
+  &:link {
+    color: $link-colour;
+  }
+
+  &:hover {
+    color: $link-hover-colour;
+  }
+
+  &:visited {
+    color: $link-visited-colour;
+  }
+
+  &:active {
+    color: $orange;
+  }
+
+  &:focus {
+    background: $yellow;
+    outline: 2px solid $yellow;
+  }
+}
+
+// Headings
+
+h1, h2, h3, h4 {
+  line-height: 1.04;
+}
+
+h1 {
+  font-size: em(48);
+  margin: 1em 0;
+}
+
+h2 {
+  font-size: em(36);
+  margin-top: em(36/1.2);
+  margin-bottom: em(36/3.4);
+}
+
+h3 {
+  font-size: em(24);
+  margin-top: em(24*1.5);
+  margin-bottom: em(24/1.5);
+}
+
+h4 {
+  font-size: em(19);
+  margin-top: em(19*1.5);
+  margin-bottom: em(19/1.5);
+}
+
+h5 {
+  font-size: 1em;
+  color: $grey-1;
+  margin-top: 1em;
+  margin-bottom: .5em;
+}
+
+// Paragraphs
+
+p {
+  margin: 0 0 1em;
+}
+
+.intro-paragraph {
+  font-size: em(27);
 }

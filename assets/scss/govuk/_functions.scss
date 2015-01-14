@@ -1,0 +1,11 @@
+@function file-url($path) {
+  $full-path: '';
+
+  @if $assets-prefix {
+    $full-path: url($assets-prefix + $path);
+  } @else {
+    $full-path: image-url($path);
+  }
+
+  @return $full-path;
+}

@@ -1,0 +1,9 @@
+.global-subheader {
+  font-size: 15px;
+  line-height: 1;
+
+  .subheader-item {
+    padding: $container-v-padding 0;
+    border-bottom: 1px solid #ccc;
+  }
+}

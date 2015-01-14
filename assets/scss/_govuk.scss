@@ -3,10 +3,15 @@
 @import 'breakpoint';
 
 @import 'govuk/$variables';
+
+@import 'govuk/functions';
+@import 'govuk/mixins';
+
 @import 'govuk/colours';
 @import 'govuk/fonts';
+@import 'govuk/base';
 @import 'govuk/typography';
 @import 'govuk/layout';
 
-@import 'govuk/masthead';
-@import 'govuk/mastfoot';
+@import 'govuk/elements';
+@import 'govuk/utilities';

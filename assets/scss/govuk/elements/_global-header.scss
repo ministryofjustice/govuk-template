@@ -1,0 +1,79 @@
+.global-header {
+  $_logo-size: 30px;
+  $_logo-offset: 3px;
+
+  @extend %container-padding;
+  background: $black;
+  color: $white;
+  line-height: $_logo-size;
+
+  .skip-link a {
+    display: inline-block;
+    margin-bottom: $container-v-padding / 2;
+    font-size: .9em;
+    line-height: 1;
+    position: absolute;
+    left: -999em;
+    overflow: hidden;
+    text-decoration: underline;
+    color: $black;
+
+    &:focus {
+      position: static;
+    }
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  .header-branding {
+    @include span(33.33% no-gutters);
+  }
+
+  .header-logo {
+    display: inline-block;
+    vertical-align: top;
+    font-weight: bold;
+    font-size: em($_logo-size);
+    padding: 1px 0 1px em($_logo-size - 3);
+    outline: 0;
+    background: file-url('/images/gov.uk_logotype_crown.png') no-repeat 0 1px;
+    background-size: 1.15em;
+
+    &:hover,
+    &:focus {
+      padding-bottom: 0;
+      border-bottom: 1px solid $white;
+    }
+
+    span {
+      display: block;
+      position: relative;
+      top: $_logo-offset;
+      line-height: $_logo-size - $_logo-offset;
+    }
+  }
+
+  .proposition-name {
+    font-size: em(24);
+    vertical-align: top;
+    position: relative;
+    top: $_logo-offset;
+  }
+
+  .container {
+    position: relative;
+  }
+
+  .header-bar {
+    @include position(absolute, null 0 (-$container-v-padding * 2) 0);
+    background: $govuk-blue;
+    height: $container-v-padding;
+  }
+
+  .header-menu-toggle {
+    display: none;
+  }
+}

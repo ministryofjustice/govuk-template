@@ -1,0 +1,53 @@
+.feature {
+  @include span(4);
+
+  &:nth-child(3n+1) {
+    margin-right: 0;
+  }
+
+  .meta {
+    color: $grey-1;
+    margin: .5em 0;
+    font-size: em(16);
+  }
+
+  .feature-image-holder {
+    @include clearfix;
+  }
+
+  .feature-image {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  h2 {
+    font-size: em(19);
+    margin: 0 0 .5em;
+
+    a {
+      text-decoration: none;
+    }
+  }
+
+  &.m-full {
+    @include span(full);
+
+    h2 {
+      font-size: em(24);
+    }
+
+    .feature-image-holder {
+      @include span(8);
+    }
+
+    .feature-text {
+      @include span(4 last);
+    }
+  }
+}
+
+
+.features .feature {
+  margin-bottom: 1.5em;
+}

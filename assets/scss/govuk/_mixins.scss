@@ -1,0 +1,15 @@
+@mixin font($font-family: null, $size: null, $line-height: null) {
+  @if $size {
+    font-size: $size;
+  }
+  @if $font-family {
+    @if map-has-key($fonts, $font-family) {
+      font-family: unquote(map-get($fonts, $font-family));
+    } @else {
+      @warn "'#{$font-family}' is not specified in $fonts map."
+    }
+  }
+  @if $line-height {
+    line-height: $line-height;
+  }
+}
