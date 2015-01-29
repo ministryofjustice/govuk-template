@@ -4,9 +4,6 @@
   "authors": [
     "Tyom Semonov <inspiro@gmail.com>"
   ],
-  "main": [
-    "assets/css/govuk.css"
-  ],
   "license": "MIT",
   "private": true,
   "ignore": [
