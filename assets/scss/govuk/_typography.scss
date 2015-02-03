@@ -34,30 +34,35 @@ h1, h2, h3, h4 {
   line-height: 1.04;
 }
 
-h1 {
+h1,
+.heading-xlarge {
   font-size: em(48);
   margin: 1em 0;
 }
 
-h2 {
+h2,
+.heading-large {
   font-size: em(36);
   margin-top: em(36/1.2);
   margin-bottom: em(36/3.4);
 }
 
-h3 {
+h3,
+.heading-medium {
   font-size: em(24);
   margin-top: em(24*1.5);
   margin-bottom: em(24/1.5);
 }
 
-h4 {
+h4,
+.heading-small {
   font-size: em(19);
   margin-top: em(19*1.5);
   margin-bottom: em(19/1.5);
 }
 
-h5 {
+h5,
+.heading-xsmall {
   font-size: 1em;
   color: $grey-1;
   margin-top: 1em;
@@ -68,8 +73,24 @@ h5 {
 
 p {
   margin: 0 0 1em;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
-.intro-paragraph {
-  font-size: em(27);
+.intro-paragraph,
+.lede {
+  font-size: em(24);
+}
+
+.font-xsmall,
+small {
+  font-size: em(16);
+}
+
+// Lists
+
+ul {
+  padding-left: 1em;
 }
