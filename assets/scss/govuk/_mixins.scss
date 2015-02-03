@@ -13,3 +13,13 @@
     line-height: $line-height;
   }
 }
+
+@mixin font-smoothing($value: on) {
+  @if $value == on {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  } @else {
+    -webkit-font-smoothing: auto;
+    -moz-osx-font-smoothing: auto;
+  }
+}
