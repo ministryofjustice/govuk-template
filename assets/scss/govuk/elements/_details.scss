@@ -1,0 +1,17 @@
+details {
+  summary {
+    @extend a;
+    color: $link-colour;
+    display: inline-block;
+    margin: 0 -8px;
+    padding: 0 5px;
+    cursor: pointer;
+    text-decoration: underline;
+
+    &:focus {
+      background: none;
+      color: $link-colour;
+      text-decoration: none;
+    }
+  }
+}
