@@ -1,18 +1,10 @@
 .feature {
-  @include span(4);
-
-  &:nth-child(3n+1) {
-    margin-right: 0;
-  }
+  @include span(4 after);
 
   .meta {
+    font-size: em(14);
     color: $grey-1;
-    margin: .5em 0;
-    font-size: em(16);
-  }
-
-  .feature-image-holder {
-    @include clearfix;
+    margin: .6em 0;
   }
 
   .feature-image {
@@ -30,24 +22,40 @@
     }
   }
 
-  &.m-full {
-    @include span(full);
+  .summary {
+    font-size: em(14);
+  }
+
+  &.first {
+    @include span(full after last);
+
+    .feature-image-holder {
+      @include span(8 after);
+    }
+
+    .feature-text {
+      @include span(4 after last);
+    }
 
     h2 {
       font-size: em(24);
     }
 
-    .feature-image-holder {
-      @include span(8);
+    .meta {
+      margin-top: 0;
     }
+  }
 
-    .feature-text {
-      @include span(4 last);
-    }
+  &.last {
+    margin-right: 0;
   }
 }
 
 
-.features .feature {
-  margin-bottom: 1.5em;
+.features {
+  @include clearfix;
+
+  .feature {
+    margin-bottom: gutters() * 2;
+  }
 }
