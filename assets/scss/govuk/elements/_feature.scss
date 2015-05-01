@@ -1,10 +1,38 @@
 .feature {
-  @include span(4 after);
+  @mixin feature-small {
+    .feature-image-holder,
+    .feature-text {
+      @include span(full);
+    }
+
+    .meta {
+      margin-top: .6em;
+    }
+
+    h2 {
+      font-size: em(19);
+    }
+
+    .summary {
+      font-size: em(14);
+    }
+  }
+
+  @include span(full);
+  max-width: 960px;
+
+  .feature-image-holder {
+    @include span(8 of 12 after);
+  }
+
+  .feature-text {
+    @include span(4 of 12 after last);
+  }
 
   .meta {
     font-size: em(14);
     color: $grey-1;
-    margin: .6em 0;
+    margin-bottom: .6em;
   }
 
   .feature-image {
@@ -14,7 +42,7 @@
   }
 
   h2 {
-    font-size: em(19);
+    font-size: em(24);
     margin: 0 0 .5em;
 
     a {
@@ -23,39 +51,26 @@
   }
 
   .summary {
-    font-size: em(14);
+    font-size: em(19);
   }
 
-  &.first {
-    @include span(full after last);
-
-    .feature-image-holder {
-      @include span(8 after);
-    }
-
-    .feature-text {
-      @include span(4 after last);
-    }
-
-    h2 {
-      font-size: em(24);
-    }
-
-    .meta {
-      margin-top: 0;
-    }
+  &.feature-small {
+    @include feature-small;
+    @include span(4 of 12);
   }
 
   &.last {
     margin-right: 0;
   }
+
+  @include breakpoint(max-width 640px) {
+    &.feature {
+      @include feature-small;
+      @include span(full);
+    }
+  }
 }
 
-
-.features {
+.featured-news {
   @include clearfix;
-
-  .feature {
-    margin-bottom: gutters() * 2;
-  }
 }
