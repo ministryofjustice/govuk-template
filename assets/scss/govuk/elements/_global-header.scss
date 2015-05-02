@@ -34,7 +34,6 @@
 
   .header-logo {
     display: inline-block;
-    vertical-align: top;
     font-weight: bold;
     font-size: em($_logo-size);
     padding: 1px 0 1px em($_logo-size - 3);
@@ -64,6 +63,7 @@
   }
 
   .container {
+    @include clearfix;
     position: relative;
   }
 
