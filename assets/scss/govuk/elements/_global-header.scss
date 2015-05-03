@@ -60,9 +60,9 @@
   }
 
   .proposition-name {
-    font-size: em(24);
-    vertical-align: top;
     position: relative;
+    font-size: em(24);
+    font-weight: 500;
     top: $_logo-offset;
   }
 
