@@ -1,3 +1,5 @@
+$assets-prefix: '' !default;
+
 @function file-url($path) {
   $full-path: '';
 
