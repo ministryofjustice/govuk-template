@@ -1,4 +1,6 @@
 .global-subheader {
+  @extend %container-padding;
+  padding-top: 0;
   font-size: 15px;
   line-height: 1;
 
