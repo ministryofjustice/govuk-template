@@ -14,7 +14,7 @@ $susy: map-merge($susy, $grid-settings);
 }
 
 .grid-row {
-  @include container;
+  @include clearfix;
   margin-left: -(gutters());
   margin-right: -(gutters());
 }
