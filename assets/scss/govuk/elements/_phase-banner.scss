@@ -4,5 +4,13 @@
   display: inline-block;
   color: $white;
   font-weight: bold;
-  background: $beta-colour;
+  background: $grey-1;
+
+  &.phase-tag-alpha {
+    background: $alpha-colour;
+  }
+
+  &.phase-tag-beta {
+    background: $beta-colour;
+  }
 }
