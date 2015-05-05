@@ -14,3 +14,23 @@
   white-space: nowrap;
   overflow: hidden;
 }
+
+[data-controlled-by] {
+  transition: opacity 300ms ease-out;
+}
+
+.u-hidden,
+[data-control-value]:not(.u-expanded) {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  width: 0;
+  height: 0;
+  padding: 0;
+  margin: 0;
+}
+
+.u-expanded.u-expanded {
+  opacity: 1;
+  visibility: visible;
+}
