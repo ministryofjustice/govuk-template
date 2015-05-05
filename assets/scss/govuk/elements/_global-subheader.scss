@@ -1,11 +1,16 @@
 .global-subheader {
   @extend %container-padding;
   padding-top: 0;
+}
+
+.subheader-item {
+  padding: $container-v-padding 0;
+  border-bottom: 1px solid #ccc;
   font-size: 15px;
   line-height: 1;
 
-  .subheader-item {
-    padding: $container-v-padding 0;
-    border-bottom: 1px solid #ccc;
+  .phase-tag {
+    margin-top: -3px;
+    margin-bottom: -3px;
   }
 }
