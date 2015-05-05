@@ -33,7 +33,7 @@
 
 %checkbox-radio-left-align {
   position: relative;
-  margin: 0 .6em 0 -1.2em;
+  margin: 0 .6em 0 -1.8em;
   top: -.1em;
 }
 
@@ -41,7 +41,7 @@
   float: left;
   clear: left;
   cursor: pointer;
-  padding: em(13) em(25) em(13) em(37);
+  padding: em(13) em(25) em(13) em(43);
   margin: em(5) em(10) em(5) 0;
   background: $grey-3;
   border: 1px solid $grey-3;
@@ -52,12 +52,19 @@
   }
 
   &:hover,
-  &:focus {
+  &:focus,
+  &.s-focused {
     border-color: $grey-1;
   }
 
-  &:focus {
+  &:focus,
+  &.s-focused {
     outline: 3px solid $yellow;
+    background: white;
+  }
+
+  &.s-selected {
+    border-color: $black;
     background: white;
   }
 
