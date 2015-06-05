@@ -1,13 +1,15 @@
-$assets-prefix: '' !default;
+$images-dir: '' !default;
 
-@function file-url($path) {
-  $full-path: '';
+@function img-url($path) {
+  $full-path: $path;
 
-  @if $assets-prefix {
-    $full-path: url($assets-prefix + $path);
-  } @else {
-    $full-path: image-url($path);
+  @if $images-dir {
+    $full-path: $images-dir + $full-path;
   }
 
-  @return $full-path;
+  @if function_exists(image-url) {
+    @return image-url($full-path);
+  }
+
+  @return url($full-path);
 }
