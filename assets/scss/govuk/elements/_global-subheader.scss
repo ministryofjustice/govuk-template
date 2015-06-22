@@ -1,5 +1,5 @@
 .global-header + .global-subheader {
-  @extend %container-padding;
+  padding: $container-v-padding $container-h-padding;
 }
 
 .subheader-item {

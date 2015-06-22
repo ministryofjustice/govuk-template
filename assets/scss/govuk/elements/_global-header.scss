@@ -2,10 +2,10 @@
   $_logo-size: 30px;
   $_logo-offset: 3px;
 
-  @extend %container-padding;
   background: $black;
   color: $white;
   line-height: $_logo-size;
+  padding: $container-v-padding $container-h-padding;
 
   .skip-link a {
     display: inline-block;
