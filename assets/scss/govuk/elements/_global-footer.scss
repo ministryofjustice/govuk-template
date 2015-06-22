@@ -1,11 +1,11 @@
+@import 'govuk/-essentials';
+
 .global-footer {
-  @extend %container-padding;
   font-size: em(16);
   color: #555;
   border-top: $container-v-padding solid $govuk-blue;
   background: $grey-3;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding: $container-v-padding 50px;
 
   a {
     color: inherit;
