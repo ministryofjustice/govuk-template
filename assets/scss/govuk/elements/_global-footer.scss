@@ -42,7 +42,7 @@
   .ogl-logo {
     $_size: 41px 17px;
 
-    @extend .u-hide-text;
+    @include visually-hidden;
     @include size($_size);
     float: left;
     background: img-url('open-government-licence_2x.png') no-repeat;
