@@ -19,5 +19,6 @@
 }
 
 .u-expanded.u-expanded {
-  @include undo-visually-hidden;
+  visibility: visible;
+  opacity: 1;
 }

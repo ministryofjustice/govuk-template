@@ -37,17 +37,6 @@
   height: 1px;
 }
 
-@mixin undo-visually-hidden {
-  clip: auto;
-  overflow: visible;
-  visibility: visible;
-  position: static;
-  opacity: 1;
-  width: auto;
-  height: auto;
-}
-
-
 // Hide text inside element
 @mixin hide-text {
   text-indent: 100%;
