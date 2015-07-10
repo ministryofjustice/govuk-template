@@ -22,8 +22,8 @@
     outline: 3px solid $yellow;
   }
 
-  & + button,
-  & + input, {
+  + button,
+  + input {
     margin-left: .5em;
   }
 
