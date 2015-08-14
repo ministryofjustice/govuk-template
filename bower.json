@@ -1,8 +1,9 @@
 {
   "name": "govuk-template",
-  "version": "0.4.0",
+  "version": "0.4.1",
   "authors": [
-    "Tyom Semonov <inspiro@gmail.com>"
+    "Tyom Semonov <inspiro@gmail.com>",
+    "Dom Smith <dom@teneightfive.com>"
   ],
   "license": "MIT",
   "private": true,
