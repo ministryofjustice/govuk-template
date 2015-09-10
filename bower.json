@@ -18,6 +18,5 @@
     "bourbon": "~4.0.2",
     "susy": "~2.2.6",
     "compass-breakpoint": "~2.5.0",
-    "jquery": "1.11.1"
   }
 }
