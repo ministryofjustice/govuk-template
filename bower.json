@@ -1,6 +1,6 @@
 {
   "name": "govuk-template",
-  "version": "0.4.3",
+  "version": "0.4.4",
   "authors": [
     "Tyom Semonov <inspiro@gmail.com>",
     "Dom Smith <dom@teneightfive.com>"
@@ -17,6 +17,6 @@
   "dependencies": {
     "bourbon": "~4.0.2",
     "susy": "~2.2.6",
-    "compass-breakpoint": "~2.5.0",
+    "compass-breakpoint": "~2.5.0"
   }
 }
