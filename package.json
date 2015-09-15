@@ -1,0 +1,23 @@
+{
+  "name": "govuk-template",
+  "version": "0.4.4",
+  "description": "",
+  "main": "gulpfile.js",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ministryofjustice/govuk-template.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ministryofjustice/govuk-template/issues"
+  },
+  "homepage": "https://github.com/ministryofjustice/govuk-template#readme",
+  "scripts": {
+    "postinstall": "bower cache clean && bower install"
+  }
+}

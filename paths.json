@@ -1,8 +1,0 @@
-{
-  "import_paths": [
-    "govuk-template/assets/scss",
-    "bourbon/dist",
-    "susy/sass",
-    "compass-breakpoint/stylesheets"
-  ]
-}

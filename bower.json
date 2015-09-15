@@ -18,5 +18,11 @@
     "bourbon": "~4.0.2",
     "susy": "~2.2.6",
     "compass-breakpoint": "~2.5.0"
-  }
+  },
+  "importPaths": [
+    "govuk-template/assets/scss",
+    "bourbon/dist",
+    "susy/sass",
+    "compass-breakpoint/stylesheets"
+  ]
 }
